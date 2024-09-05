@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebP to GIF Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-center py-20">
+    <div class="max-w-lg mx-auto bg-white p-8 shadow-md">
+        <h1 class="text-2xl font-bold mb-5">WebP to GIF Converter</h1>
+        <input type="file" id="webpFile" accept=".webp" class="mb-4 block w-full px-3 py-2 text-gray-700 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+        <button id="convertBtn" class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Convert to GIF</button>
+        <div class="mt-5">
+            <a id="downloadLink" class="hidden text-blue-500 underline">Download GIF</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.9.8/dist/ffmpeg.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
